@@ -20,39 +20,46 @@
     <header class="header-section">
       <div class="container header-container">
         <nav class="nav-container">
-          <a class="logo-title" href="./index.html"
+          <a class="logo-title header-logo" href="./index.html"
             >Web<span class="half-logo">Studio</span></a
           >
           <ul class="nav-list">
-            <li><a class="link-item current" href="./index.html">Studio</a></li>
-            <li><a class="link-item" href="">Portfolio</a></li>
-            <li><a class="link-item" href="">Contacts</a></li>
+            <li>
+              <a class="nav-link-item current" href="./index.html">Studio</a>
+            </li>
+            <li><a class="nav-link-item" href="">Portfolio</a></li>
+            <li><a class="nav-link-item" href="">Contacts</a></li>
           </ul>
         </nav>
-        <address class="phone-mail-box">
+        <address class="contacts">
           <ul class="contacts-list">
             <li>
-              <a class="info-item" href="mailto:info@devstudio.com"
+              <a class="contacts-item" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="info-item" href="tel:+110001111111"
+              <a class="contacts-item" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="icon-burger" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section class="hero-section">
-        <div class="container solutions-container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
         </div>
       </section>
-      <section class="strengths-section">
+      <section class hidden="strengths-section">
         <div class="container">
           <h2 class="visually-hidden">Our strengths</h2>
           <ul class="strengths-list">
@@ -107,7 +114,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-team-section">
+      <section class hidden="our-team-section">
         <div class="container team-card-container">
           <h2 class="team-name-title">Our Team</h2>
           <ul class="our-team-list">
@@ -282,7 +289,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio-section">
+      <section class hidden="portfolio-section">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -404,7 +411,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-section">
+    <footer class hidden="footer-section">
       <div class="container footer-box">
         <div class="footer-container">
           <a class="footer-logo" href="./index.html"
@@ -470,7 +477,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class hidden="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
