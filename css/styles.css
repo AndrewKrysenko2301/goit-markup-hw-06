@@ -187,21 +187,21 @@ button {
 }
 /* Hero */
 .hero-section {
-  max-width: 320px;
+  /* max-width: 320px; */
   height: auto;
   margin: 0 auto;
-  width: 100%;
-  padding: 188px 472px;
+  /* width: 100%; */
+  /* padding: 188px 472px; */
   background-repeat: no-repeat;
   background-position: center;
-  padding: 188px 52px;
+  padding: 188px 0px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people_office1.jpg);
-  background-position: auto;
+    url(../images/Hero/people-office\ 1-min.jpg);
+  /* background-position: auto; */
   background-size: cover;
 }
 .hero-container {
@@ -214,7 +214,7 @@ button {
 .hero-title {
   /* max-width: 160px; */
   max-width: 496px;
-  height: 120px;
+  /* height: 120px; */
   /* text-align: center; */
   font-weight: 700;
   font-size: 36px;
@@ -251,9 +251,19 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero-section {
-    max-width: 768px;
+    /* max-width: 768px; */
     width: 100%;
     padding: 112px 0;
+    background-size: cover;
+  }
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Hero/people-office-1@2x-min.jpg);
+    }
   }
 
   .hero-title {
@@ -267,7 +277,7 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .hero-section {
-    max-width: 1158px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -278,7 +288,7 @@ button {
 /* strengths-section */
 
 .strengths-section {
-  margin: 96px 16px;
+  margin: 96px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -416,8 +426,8 @@ button {
 }
 .card-item-desc {
   margin-top: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
+  /* margin-left: 16px;
+  margin-right: 16px; */
 }
 .name-title {
   font-weight: 500;
@@ -620,7 +630,8 @@ button {
   gap: 0px;
 }
 .footer-logo {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -680,7 +691,7 @@ button {
   line-height: 24px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-align: center;
   margin-bottom: 16px;
 }
 .footer-icon {
@@ -695,7 +706,6 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 16px;
-  text-align: left;
 }
 .footer-email-box {
   max-width: 100%;
@@ -769,7 +779,7 @@ button {
   }
   .footer-container {
     width: 264px;
-    margin-right: 0;
+    /* margin-right: 0; */
   }
   .footer-email-box {
     width: 100%;
@@ -787,14 +797,14 @@ button {
     gap: 0;
   }
 
-  .footer-container {
+  /* .footer-container {
     margin-right: 120px;
-  }
+  } */
 
-  .footer-email-box {
+  /* .footer-email-box {
     margin-left: auto;
     max-width: 453px;
-  }
+  } */
 }
 /* mobile menu */
 
