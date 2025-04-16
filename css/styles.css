@@ -187,11 +187,8 @@ button {
 }
 /* Hero */
 .hero-section {
-  /* max-width: 320px; */
   height: auto;
   margin: 0 auto;
-  /* width: 100%; */
-  /* padding: 188px 472px; */
   background-repeat: no-repeat;
   background-position: center;
   padding: 188px 0px;
@@ -201,21 +198,17 @@ button {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/Hero/people-office\ 1-min.jpg);
-  /* background-position: auto; */
   background-size: cover;
 }
 .hero-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Центрируем все элементы по горизонтали */
-  justify-content: center; /* Центрируем по вертикали */
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .hero-title {
-  /* max-width: 160px; */
   max-width: 496px;
-  /* height: 120px; */
-  /* text-align: center; */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -226,13 +219,11 @@ button {
   margin-right: auto;
 }
 .hero-btn {
-  /* display: block; */
   margin-left: auto;
   margin-right: auto;
   width: 169px;
   height: 56px;
   border: none;
-  /* text-align: center; */
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -251,7 +242,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero-section {
-    /* max-width: 768px; */
     width: 100%;
     padding: 112px 0;
     background-size: cover;
@@ -311,8 +301,6 @@ button {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
   gap: 72px;
 }
 .preferences-title {
@@ -419,15 +407,13 @@ button {
   border-radius: 0 0 4px 4px;
   width: 264px;
   height: 428px;
-  max-width: 264px; /* Максимальная ширина */
+  max-width: 264px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
 }
 .card-item-desc {
   margin-top: 32px;
-  /* margin-left: 16px;
-  margin-right: 16px; */
 }
 .name-title {
   font-weight: 500;
@@ -475,33 +461,29 @@ button {
 .icon {
   fill: #f4f4fd;
 }
-/* Планшет — 2 карточки в ряд */
+
 @media screen and (min-width: 768px) {
   .our-team-list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 64px 24px; /* row-gap 64px, column-gap 24px */
+    gap: 64px 24px;
   }
 
   .our-team-list .team-card-item {
-    /* width: calc((100% - 24px) / 2);
-    max-width: none; */
     width: 264px;
     width: 100%;
   }
 }
 
-/* Десктоп — 4 карточки в ряд */
 @media screen and (min-width: 1158px) {
   .our-team-list {
-    /* max-width: 1158px; */
     flex-wrap: wrap;
     justify-content: center;
     gap: 72px 24px;
   }
   .our-team-list .team-card-item {
-    width: calc((100% - 72px) / 4); /* 3 промежутка по 24px */
+    width: calc((100% - 72px) / 4);
   }
 }
 
@@ -591,31 +573,29 @@ button {
   transform: translateY(0);
 }
 
-/* Мобильные устройства (320px) — карточки в 1 колонку */
 @media screen and (max-width: 320px) {
   .portfolio-item {
     width: 100%;
   }
 }
 
-/* Планшет (768px) — карточки в 2 колонки */
 @media screen and (min-width: 768px) {
   .portfolio-item {
-    width: calc((100% - 24px) / 2); /* 2 колонки */
+    width: calc((100% - 24px) / 2);
   }
 }
 
-/* Десктоп (1158px) — карточки в 3 колонки */
 @media screen and (min-width: 1158px) {
   .portfolio-container {
     max-width: 1128px;
   }
   .portfolio-item {
-    width: calc((100% - 48px) / 3); /* 3 колонки */
+    width: calc((100% - 48px) / 3);
   }
 }
 
-/* footer */
+/* Footer */
+
 .footer-section {
   background-color: #2e2f42;
   padding-top: 102px;
@@ -648,7 +628,6 @@ button {
   color: #f4f4fd;
 }
 .footer-desc {
-  /* width: 264px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -771,7 +750,7 @@ button {
   fill: #fff;
   margin-left: 16px;
 }
-/* Планшет — два столбца */
+
 @media screen and (min-width: 768px) {
   .footer-box {
     width: 1128px;
@@ -781,7 +760,6 @@ button {
     justify-content: flex-start;
     align-items: normal;
     padding-left: 108px;
-    /* padding: 96px 164px 96px 92px; */
   }
   .footer-logo,
   .footer-desc-media,
@@ -800,10 +778,9 @@ button {
     gap: 24px;
   }
 }
-/* Десктоп — три столбца */
+
 @media screen and (min-width: 1158px) {
   .footer-section {
-    max-width: 1440px;
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -823,12 +800,9 @@ button {
   .footer-social-box {
     margin-right: 80px;
   }
-  /* .footer-input {
-    margin-right: 24px;
-  } */
 }
 
-/* mobile menu */
+/* Mobile-menu */
 
 .mobile-menu {
   position: fixed;
@@ -893,7 +867,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* margin-bottom: 48px; */
 
   font-weight: 500;
   font-size: 20px;
@@ -926,14 +899,13 @@ button {
 }
 .modal {
   position: absolute;
-  /* top: center;
-  left: center; */
+
   top: 25%;
   left: 50%;
   border-radius: 4px;
   width: 288px;
   min-height: 584px;
-  /* padding: 24px 16px; */
+
   padding-left: 16px;
   padding-right: 16px;
   transform: translate(-50%, -50%);
@@ -951,8 +923,7 @@ button {
   right: 24px;
   width: 24px;
   height: 24px;
-  /* padding: 0; */
-  /* border-radius: 100%; */
+
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -1032,7 +1003,7 @@ button {
   display: block;
   margin: 0 auto;
   border-radius: 4px;
-  /* padding: 16px 32px; */
+
   min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -1126,23 +1097,3 @@ button {
     min-height: 31px;
   }
 }
-/* .modal {
-  width: 288px;
-  min-height: auto;
-  padding: 72px 16px 24px 16px;
-} */
-/* === Планшеты и выше === */
-/* @media screen and (min-width: 768px) {
-  .modal {
-    width: 408px;
-    min-height: 584px;
-    padding: 72px 24px 24px 24px;
-  }
-} */
-
-/* === Десктопы (опционально) === */
-/* @media screen and (min-width: 1158px) {
-  .modal {
-    
-  }
-} */
