@@ -623,7 +623,7 @@ button {
 }
 .footer-box {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 72px;
@@ -658,7 +658,6 @@ button {
 }
 .footer-list {
   display: flex;
-  /* <-- уже горизонтально */
   gap: 16px;
 }
 .footer-item {
@@ -695,14 +694,10 @@ button {
 .footer-icon {
   fill: #f4f4fd;
 }
-
 .footer-email-box {
   display: flex;
   gap: 16px;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
-  /* max-width: 100%; */
 }
 .footer-form {
   max-width: 100%;
@@ -712,6 +707,7 @@ button {
   gap: 16px;
   width: 100%;
 }
+
 .footer-email-title {
   color: #ffffff;
   font-size: 1.5;
@@ -726,7 +722,6 @@ button {
   border: 1px solid #fff;
   border-radius: 4px;
   background-color: transparent;
-  /* width: 100%; */
   width: 288px;
   height: 40px;
   font-size: 12px;
@@ -740,12 +735,7 @@ button {
   opacity: 0.3;
 }
 
-.footer-sub-icon {
-  fill: #fff;
-  margin-left: 16px;
-}
 .footer-input::placeholder {
-  /* font-family: "Roboto", sans-serif; */
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
@@ -759,10 +749,9 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 165px; /* Устанавливаем фиксированную ширину */
+  width: 165px;
   height: 40px;
   text-align: center;
-  /* width: 100%; */
   border-radius: 4px;
   padding: 8px 24px;
   background-color: #4d5ae5;
@@ -778,6 +767,10 @@ button {
 .footer-btn:hover {
   background-color: #404bbf;
 }
+.footer-sub-icon {
+  fill: #fff;
+  margin-left: 16px;
+}
 /* Планшет — два столбца */
 @media screen and (min-width: 768px) {
   .footer-box {
@@ -787,7 +780,7 @@ button {
     gap: 72px 24px;
     justify-content: flex-start;
     align-items: normal;
-    padding-left: 92px;
+    padding-left: 108px;
     /* padding: 96px 164px 96px 92px; */
   }
   .footer-logo,
@@ -798,37 +791,30 @@ button {
   .footer-desc {
     width: 264px;
   }
-  .footer-form {
-    flex-direction: row;
-  }
   .footer-input {
     width: 264px;
-    height: 40px;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
   }
 }
 /* Десктоп — три столбца */
 @media screen and (min-width: 1158px) {
   .footer-section {
-    /* max-width: 1440px; */
+    max-width: 1440px;
     width: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 156px;
-    padding-right: 159px;
-    margin: 0 auto;
-
-    /* padding-left: 156px;
-    padding-right: 159px; */
   }
   .footer-box {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* justify-content: space-between; */
+    margin: 0 auto;
     align-items: baseline;
     gap: 0;
-    padding-top: 100px;
-    padding-bottom: 100px;
     padding-left: 15px;
   }
   .footer-container {
@@ -837,6 +823,9 @@ button {
   .footer-social-box {
     margin-right: 80px;
   }
+  /* .footer-input {
+    margin-right: 24px;
+  } */
 }
 
 /* mobile menu */
