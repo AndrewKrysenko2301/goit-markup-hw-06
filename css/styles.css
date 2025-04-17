@@ -745,7 +745,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .footer-box {
-    width: 1128px;
+    width: 1158px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
